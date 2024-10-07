@@ -28,7 +28,6 @@ function preload() {
 function setup() {
   createCanvas(540, 480); //se puede modificar a windowWidth y windowHeight
   // Create the video
-  canvas.position((windowWidth - width) / 2, (windowHeight - height) / 2);
   video = createCapture(VIDEO);
   video.size(540, 460); // se puede poner mismas dimensiones que el canvas
   video.hide();
