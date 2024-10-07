@@ -1,7 +1,7 @@
 // Classifier Variable
 let classifier;
 // Model URL
-let imageModelURL = "https://teachablemachine.withgoogle.com/models/YYN2ug-bE/";
+let imageModelURL = "https://teachablemachine.withgoogle.com/models/T56XScCPJ/";
 
 // Video
 let video;
@@ -59,7 +59,7 @@ function draw() {
   textSize(8);
   text(confianza, 10, height - 4);
 
-  if (label == "crema") {
+  if (label == "pelota") {
     filter(BLUR, 5);
     background(0, 98);
     noStroke();
@@ -124,7 +124,7 @@ function draw() {
     rect(20, 450, 504, 4);
   }
 
-  if (label == "perfume") {
+  if (label == "pacman") {
     filter(GRAY);
     background(0, 25);
     rect(122, 260, 341, 4);
