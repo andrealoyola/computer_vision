@@ -60,6 +60,7 @@ function draw() {
   textSize(8);
   text(confianza, 10, height - 4);
 
+<<<<<<< Updated upstream
   if (label == "pelota") {
     filter(BLUR, 5);
     background(0, 98);
@@ -140,6 +141,10 @@ function draw() {
     textStyle(NORMAL);
 
     text("- Pac man", 320, 300);
+=======
+  if (label == "crema") {
+    filter(INVERT);
+>>>>>>> Stashed changes
   }
 }
 
