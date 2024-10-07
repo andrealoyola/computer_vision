@@ -26,8 +26,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(540, 480); //se puede modificar a windowWidth y windowHeight
+  let canvas = createCanvas(540, 480); //se puede modificar a windowWidth y windowHeight
   // Create the video
+  canvas.position((windowWidth - width) / 2, (windowHeight - height) / 2);
   video = createCapture(VIDEO);
   video.size(540, 460); // se puede poner mismas dimensiones que el canvas
   video.hide();
@@ -59,7 +60,6 @@ function draw() {
   textSize(8);
   text(confianza, 10, height - 4);
 
-<<<<<<< Updated upstream
   if (label == "pelota") {
     filter(BLUR, 5);
     background(0, 98);
@@ -140,10 +140,6 @@ function draw() {
     textStyle(NORMAL);
 
     text("- Pac man", 320, 300);
-=======
-  if (label == "crema") {
-    filter(INVERT);
->>>>>>> Stashed changes
   }
 }
 
